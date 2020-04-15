@@ -1,0 +1,969 @@
+*
+{
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    /* #063146  #0a5275 #042331 */
+}
+header
+{
+    width: 100%;
+    height: 90px;
+    background-color: #063146;
+    overflow: auto;
+}   
+header nav 
+{
+    width: 65%;
+    float: left;
+    text-transform: uppercase;
+    position: relative;
+}
+header nav ul 
+{
+    position: absolute;
+    top: 30px;
+    height: 70%;
+}
+header nav ul li 
+{
+    float: left;
+    padding-left: 40px;
+}
+.headimg
+{
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    position: relative;
+    bottom: 10px;
+}
+header nav ul li a
+{
+    display: block;
+    font-size: 17px;
+    font-family: cursive;
+    transition: all ease-in-out 0.3s ;
+    color: white;
+    position: relative;
+}
+header nav ul li:hover a
+{
+    text-decoration: none;
+    color: white;
+}
+header nav ul li a::after
+{
+    content:'';
+    position: absolute;
+    bottom:-5px;
+    left:50%;
+    height:2px;
+    width: 0;
+    background-color: white;
+    transition: width 0.7s;
+}
+header nav ul li a:hover::after
+{
+    width:50%;
+    transition: width 1s;
+}
+header nav ul li:first-of-type a:hover::after
+{
+    width:0;
+}
+header nav ul li a::before
+{
+    content:'';
+    position: absolute;
+    bottom:-5px;
+    right:50%;
+    height:2px;
+    width: 0;
+    background-color: white;
+    transition: width 0.7s;
+}
+
+header nav ul li a:hover::before
+{
+    width:50%;
+    transition: width 1s;
+} 
+header nav ul li:first-of-type a:hover::before
+{
+    width:0;
+}
+header section
+{
+    width: 35%;
+    height: 100%;
+    float: right;
+    position: relative;
+}
+header section h3
+{
+    margin: 20px auto;
+    position: absolute;
+    right: 70px;
+    color: white;
+    font-family: cursive;
+}
+.home-img
+{
+    width:100%;
+    height: 700px;
+    background-image: url("../images/homeimg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home-img-logo
+{
+    width: 500px;
+    height: 170px;
+    background-color: #ffffff;   
+    opacity: 0.6;
+    margin: auto;
+    position: relative;
+    top: 400px;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    transition: all ease-in-out 0.5s;
+}
+.home-img-logo-info
+{
+    position: absolute;
+    left: 45px;
+    padding: 10px;
+}
+.home-img-logo-info h1
+{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 46px;
+}
+.home-img-logo-info button
+{
+    width: 150px;
+    height: 35px;
+    background-color: black;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    border: 0px;
+    border-radius: 2px;
+    position: absolute;
+    left: 130px;
+    transition: 0.5s;
+}
+.home-img-logo:hover 
+{
+    opacity: 1;
+}
+.home-img-logo-info button:hover
+{
+    transform: scale(1.1,1.1);
+    box-shadow: 2px 2px 2px black;
+}
+.under-home-img
+{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(190, 190, 190);
+    text-align: center;
+    padding-top: 3px;
+}
+.under-home-img p
+{
+    letter-spacing: 5px;
+}
+.view-items
+{
+    width: 100%;
+    background-color: rgba(239, 247, 251,1);
+    padding-bottom: 50px;
+}
+.center-view-items
+{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+.info
+{
+    width: 450px;
+    height: 250px;
+    margin: auto;
+    padding:20px;
+    padding-left: 5px;
+    position: relative;
+    top: 50px;
+}
+.info-title
+{
+    width: 100%;
+    height: 50%;
+    padding: 20px;
+    padding-left: 0px;
+    white-space: nowrap;
+}
+.info-title h1
+{
+    letter-spacing: 20px;
+    font-family: cursive;
+}
+hr
+{
+    width: 40px;
+    background-color: black;
+}
+.info-title p
+{
+    padding-top: 30px;
+    margin-left: 60px;
+    letter-spacing: 10px;
+    font-family: Tahoma;
+    color: rgba(0, 0, 0,0.7);
+    font-size: 18px;
+}
+.container
+{
+    justify-content: center;
+}
+.card
+{
+    position: relative;
+    top: 50px;
+    width: 90%;
+    border: 0;
+    height: 400px;
+    transition: 0.8s;
+    transform-style: preserve-3d;
+    margin-top:20px ;
+    background-color: rgba(239, 247, 251,1);
+    overflow: hidden;
+}
+.above-card
+{
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+    z-index: 2;
+    transform: translateY(120px);
+    transition: all ease-in-out .6s;
+}
+.card:hover .above-card
+{
+    transform: translateY(0);
+    border-bottom-left-radius:0px;
+    border-bottom-right-radius: 0px;
+}
+.card:hover .under-card
+{
+    border-top-left-radius:0px;
+    border-top-right-radius: 0px;
+}
+#card1
+{
+    background-image: url("../images/mens.JPG");
+    background-size: cover;
+}
+#card2
+{
+    background-image: url("../images/kids.jpg");
+    background-size: cover;
+}
+#card3
+{
+    background-image: url("../images/womens.JPG");
+    background-size: cover;
+}
+.under-card
+{
+    width: 100%;
+    height: 30%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    position:relative;
+    z-index: 1;
+}
+.under-card article
+{
+    float: left;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+.under-card a
+{
+    float: right;
+    position: absolute;
+    top: 45px;
+    right: 20px;
+    font-weight: bold;
+    transition: all ease-in-out .5s;
+    transform-style: preserve-3d;
+}
+.under-card a:hover
+{
+    text-decoration: none;
+    transform: translateX(5px);
+}
+.footer
+{
+    width: 100%;
+    height: 300px;
+    background-color: #063146; 
+}
+.footer-content
+{
+    width: 75%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+.left
+{
+    width: 30%;
+    height: 100%;
+    overflow: auto;
+}
+.left-content
+{
+    width: 80%;
+    height: 30%;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+}
+.left-content .sentence
+{
+    color: rgba(250,250,250,0.7);   
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+.left-content .links
+{
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+}
+.left-content .links a > img
+{
+    padding-top: 15px;
+    width: 25px;
+    cursor: pointer;    
+}
+.middle
+{
+    width: 50%;
+    height: 100%;
+    overflow: visible;
+}
+.middle-content
+{
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+}
+.middle-sentence
+{
+    color: rgba(250,250,250,0.7);
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    font-size: 13px;
+    margin-left:150px ;
+}
+.middle-inputs
+{
+    display: flex;
+    flex-direction:column;
+    margin-top: -50px ;
+}
+.middle-inputs > input
+{
+    width: 70%;
+    background-color: rgba(250,250,250,0.3);
+    color: white;
+    border: 0;
+    border-radius: 2px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+::-webkit-input-placeholder
+{
+    color: white;
+    font-size: medium;
+}
+.middle-inputs > input:hover
+{
+    background-color: rgba(250,250,250,0.5);
+}
+.middle-inputs > button
+{
+    width: 70%;
+    background-color: rgba(228, 227, 227,0.9);
+    color: rgb(0, 0, 0,0.5);
+    border: 0;
+    border-radius: 2px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+.middle-inputs > button:hover
+{
+    background-color: white;
+}
+.middle-copyright
+{
+    color: rgba(250,250,250,0.7);
+    margin-top: -50px;
+    padding-left: 30px;
+}
+.middle-copyright > a
+{
+    text-decoration: underline;
+}
+.right
+{
+    width: 30%;
+    height: 100%;
+    overflow: auto;
+}
+.right-content
+{
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    position: relative;
+}
+.right-sentence
+{
+    width: 180px;
+    color: rgba(250,250,250,0.7);
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    font-size: 13px;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+.right-sentence p:first-of-type
+{
+    font-family: cursive;
+    color: white;
+    margin: auto;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 3px;
+}
+.right-sentence p:last-of-type
+{
+    color: white;
+}
+.shop-logo
+{
+    width: 100%;
+    height: 150px;
+    background-color: rgba(239, 247, 251,0.8);
+}
+.shop-logo-position
+{
+    width: 50%;
+    height: 80%;
+    margin: auto;
+    position: relative;
+}
+.shop-logo h2
+{
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    letter-spacing: 5px;
+}
+.shop-page
+{
+    width: 100%;
+    display: flex;
+    background-color: rgba(239, 247, 251,0.8);
+    padding-bottom: 50px;
+}
+.left-page
+{
+    width: 30%;
+    height: 70%;
+}
+.right-page
+{
+    width: 100%;
+    height: 100%;
+}
+.selections-left-content
+{
+    width: 70%;
+    height: 100%;
+    margin-left:30% ;
+    display:flex;
+    flex-direction:column ;
+}
+.first
+{
+    width: 100%;
+    border-bottom: 1px solid rgba(83, 83, 83,0.3);
+    padding-bottom: 12px;
+}
+.second
+{
+    width: 100%;
+    border-bottom: 1px solid rgba(83, 83, 83,0.3);
+    padding-bottom: 17px;
+}
+.third
+{
+    width: 100%;
+    border-bottom: 1px solid rgba(83, 83, 83,0.3);
+    padding-bottom: 17px;
+}
+.fourth
+{
+    width: 100%;
+    border-bottom: 1px solid rgba(83, 83, 83,0.3);
+    padding-bottom: 17px;
+    margin-bottom: 10px;
+}
+.fifth
+{
+    width: 100%;
+    border-bottom: 1px solid rgba(83, 83, 83,0.3);
+    padding-bottom: 12px;
+    margin-bottom: 10px;
+}
+.six
+{
+    width: 100%;
+    border-bottom: 1px solid rgba(83, 83, 83,0.3);
+    padding-bottom: 12px;
+    text-align: center;
+}
+.first p
+{
+    font-size: 40px;
+    color: rgb(83, 83, 83);
+}
+.second p
+{
+    padding-top: 2px;
+    font-size: 20px;
+    color: rgb(83, 83, 83);
+}
+.second select
+{
+    border: 0;
+    border-radius: 2px;
+    background-color: rgba(10, 82, 117,0.9);/* #063146  #0a5275 #042331 */
+    color: #c0c0c0;
+    height: 25px;
+}
+.third p
+{
+    height: 23px;
+    padding-top: 2px;
+    font-size: 20px;
+    color: rgb(83, 83, 83);
+}
+.third .colors
+{
+    padding-top: 10px;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.third .colors div
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+.third .colors .black
+{
+    background-color: black;
+}
+.third .colors .green
+{
+    background-color: green;
+}
+.third .colors .offwight
+{
+    background-color: rgba(0, 0, 0, 0.1) ;
+}
+.third .colors .blue
+{
+    background-color: blue;
+}
+.third .colors .brown
+{
+    background-color: brown;
+}
+.third .colors .purble
+{
+    background-color: purple;
+}
+.third .colors .red
+{
+    background-color: red;
+}
+.fourth p
+{
+    height: 23px;
+    padding-top: 2px;
+    font-size: 20px;
+    color: rgb(83, 83, 83);
+}
+.fourth-div
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.sort
+{
+    width: 100%;
+    height: 10%;
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.sort select
+{   
+    width: 23%;
+    height: 32px;
+    color: rgba(83, 83, 83,0.8);
+    font-size: large;
+    border-radius: 2px;
+}
+.sort input
+{
+    width: 10%;
+    background-color: rgba(0, 0, 0,0.8);
+    border: 0;
+    color: white;
+    font-family: Arial;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    border-radius: 2px;
+    position: absolute;
+    left: 50px;
+    bottom: 13px;
+}
+.sort input:hover
+{
+    background-color: rgba(0, 0, 0,0.5);
+}
+.container-content
+{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    margin-top: -30px;
+}
+.shop-card
+{
+    position: relative;
+    top: 50px;
+    width: 90%;
+    border: 0;
+    height: 300px;
+    transition: 0.8s;
+    transform-style: preserve-3d;
+    margin:20px auto ;  
+}
+.above-shop-card
+{
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: all ease-in-out .6s;
+}
+.above-shop-card button
+{
+    width: 120px;
+    height: 35px;
+    border-radius: 100px;
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    transform: translateY(75px);
+    transition: all ease-in-out .6s;
+}
+.above-shop-card button:hover
+{
+    background-color: black;
+    color: white;
+    border: 0px;
+}
+.above-shop-card:hover button
+{
+    transform: translateY(0);
+
+}
+#shop-card1
+{
+    background-image: url("../images/1.JPG");
+    background-size: cover;
+}
+#shop-card2
+{
+    background-image: url("../images/2.JPG");
+    background-size: cover;
+}
+#shop-card3
+{
+    background-image: url("../images/3.JPG");
+    background-size: cover;
+}
+#shop-card4
+{
+    background-image: url("../images/12.JPG");
+    background-size: cover;
+}
+#shop-card5
+{
+    background-image: url("../images/6.JPG");
+    background-size: cover;
+}
+#shop-card6
+{
+    background-image: url("../images/11.JPG");
+    background-size: cover;
+}
+.under-shop-card
+{
+    width: 100%;
+    height: 20%;
+}
+.under-shop-card a
+{
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+.under-shop-card a:hover
+{
+    text-decoration: none;
+}
+span
+{
+    font-size: 15px;
+    color: rgb(165, 164, 164);
+    text-decoration: line-through;
+}
+.customer-logo
+{
+    width: 100%;
+    height: 300px;
+    background-color: rgba(239, 247, 251,0.8);
+}
+.customer-logo section
+{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    border-bottom: 1px solid rgb(83, 83, 83);
+}
+.customer-position
+{
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    overflow: auto;
+}
+.customer-logo h2
+{
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    letter-spacing: 5px;
+}
+.customer-logo p
+{
+    font-family: Arial;
+    font-size: 15px;
+    position: absolute;
+    top: 55%;
+    left: 5%;
+    color: rgb(83, 83, 83);
+}
+
+.customer-register
+{
+    width: 100%;
+    height: 450px;
+    background-color: rgba(239, 247, 251,0.8);
+    display: flex;
+}
+.customer-register-left
+{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    overflow: auto;
+}
+.customer-register-right
+{
+    width: 50%;
+    height: 100%;
+}
+.customer-register-left-content
+{
+    width: 50%;
+    height: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-around;
+}
+.customer-register-left-content-first
+{
+    color: rgba(83,83,83,0.9);
+    font-family: Arial;
+    font-size: 17px;
+    margin-left: 60px;
+}
+.customer-register-left-content-second
+{
+    width: 180px;
+    color: rgb(83,83,83);
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    font-size: 18px;
+    margin-top: -50px;
+    margin-left: 60px;
+}
+.customer-register-left-content-second p:first-of-type
+{
+    font-weight: bold;
+    padding-left: 15px;
+}
+.customer-register-left-content-second p
+{
+    font-size: 17px;
+    margin-top: -10px;
+    color: rgba(83,83,83);
+}
+.customer-register-right form
+{
+    width: 55%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 65px;
+}
+.customer-register-right form ::-webkit-input-placeholder 
+{
+    color: rgb(83, 83, 83);
+}
+.customer-register-right form textarea
+{
+    color: rgb(83, 83, 83);
+}
+.customer-register-right form textarea:hover
+{
+    background-color: rgba(0, 0, 0,0.1);
+}
+.text-input:hover
+{
+    background-color: rgba(0, 0, 0,0.1);
+}
+.submit-input
+{
+    width: 40%;
+    background-color: rgba(0, 0, 0,0.8);
+    border: 0;
+    color: white;
+    font-family: Arial;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+.submit-input:hover
+{
+    background-color: rgba(0, 0, 0,0.5);
+}
+#customer-logo-position
+{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    border-bottom: 1px solid rgb(83, 83, 83);
+    border-top: 1px solid rgb(83, 83, 83);
+}
+.faq-logo
+{
+    width: 100%;
+    height: 550px;
+    background-color: rgba(239, 247, 251,0.8);
+}
+.faq-logo-position
+{
+    width: 70%;
+    height: 20%;
+    margin: auto;
+    position: relative;
+}
+.faq-logo-position h2
+{
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    letter-spacing: 3px;
+}
+.faq-content
+{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    overflow: auto;
+}
+.faq-content-left
+{
+    width: 50%;
+    padding-left: 15%;
+    display: flex;
+    flex-direction: column;
+}
+.faq-content-right
+{
+    padding-left: 5%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.faq-content-questions
+{
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 17px;
+}
